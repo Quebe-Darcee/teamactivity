@@ -12,7 +12,27 @@
         <h1>
           <%= title %>
         </h1>
-        <p>This is the placeholder for Team Activity 02</p>
+        <div>
+          <form action="/ta02/addUser" method="POST">
+            <label>Add User:</label><br>
+            <input type="text" name="newUser">
+            <input type="submit">
+          </form>
+        </div>
+        <div>
+          <form action="/ta02/removeUser" method="POST">
+            <label>Remove User:</label><br>
+            <input type="text" name="removeUser">
+            <input type="submit">
+          </form>
+        </div>
+        <span id="error"></span>
+        <div>
+          <% for (var i=0; i < users.length; i++) { %>
+            <%= users[i] %>
+            <br>
+          <% } %>
+        </div>
       </div>
     </div>
     <div class="container">

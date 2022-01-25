@@ -17,10 +17,10 @@
     "express": "^4.17.2",
     "express-handlebars": "^3.0.2",
     "nodemon": "^2.0.15",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "request": "^2.88.2"
   },
   "devDependencies": {
-    "request": "^2.81.0",
     "tape": "^4.7.0"
   },
   "repository": {
